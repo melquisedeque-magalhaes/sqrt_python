@@ -6,7 +6,8 @@ def computer(end, start=1):
     pos = start
     while pos < end:
         pos += 1
-        math.sqrt((pos - 1000000) * (pos - 1000000))
+        res = math.sqrt((pos - 1000000) * (pos - 1000000))
+        print(f"resultado da raiz quadrada {res}")
 
 
 def main():
@@ -14,7 +15,7 @@ def main():
     end = 50000000
     computer(end)
     time = datetime.datetime.now() - start
-    print(f"Terminou em {time.total_seconds():.2f} segundos")
+    print(f"Terminou em {time.total_seconds():.2f} segundos.")
 
 
 if __name__ == '__main__':
